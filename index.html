@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+    
+    :root {
+      /* Primary */
+
+      --bright-orange: hsl(31, 77%, 52%);
+      --dark-cyan: hsl(184, 100%, 22%);
+      --very-dark-cyan: hsl(179, 100%, 13%);
+
+      /* Neutral */
+
+      --transparent-white: hsla(0, 0%, 100%, 0.75);
+      --very-light-gray: hsl(0, 0%, 95%);
+      font-size: 15px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    h1 {
+      font-family: 'Big Shoulders Display', cursive;
+    }
+
+    p {
+      font-family: 'Lexend Deca', sans-serif;
+    }
+
+    .card {
+      display: flex;
+      max-width: 1080px;
+      overflow: hidden;
+      border-radius: 8px;
+    }
+
+    .card__sedans {
+      background-color: var(--bright-orange);  
+      display: flex;    
+      flex-direction: column;
+      padding: 3rem;
+    }
+
+    .card__suvs {
+      background-color: var(--dark-cyan);
+      display: flex;    
+      flex-direction: column;
+      padding: 3rem;
+    }
+
+    .card__luxuries {
+      background-color: var(--very-dark-cyan);
+      display: flex;    
+      flex-direction: column;
+      padding: 3rem;
+    }
+
+    .card__title {
+      text-transform: uppercase;
+      color: var(--very-light-gray);
+      font-size: 2.5rem;
+      margin: 25px 0 15px;
+    }
+
+    .card__description {
+      color: var(--transparent-white);
+    }
+
+    .attribution { 
+      font-size: 11px; 
+      text-align: center; 
+      position: fixed;
+      bottom: 0;
+    }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <article class="card__sedans">
+      <img src="./images/icon-sedans.svg" alt="sedan"  width="64" height="40" class="car__image">
+      <h1 class="card__title">Sedans</h1>
+      <p class="card__description">Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+  or on your next road trip.</p>
+      <button class="more__btn">Learn More</button>
+    </article>
+    <article class="card__suvs">
+      <img src="./images/icon-suvs.svg" alt="suv" width="64" height="40" class="car__image">
+      <h1 class="card__title">SUVs</h1>
+      <p class="card__description">Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+  and off-road adventures.</p>
+      <button class="more__btn">Learn More</button>
+    </article>
+    <article class="card__luxuries">
+      <img src="./images/icon-luxury.svg" alt="luxury" width="64" height="40" class="car__image">
+      <h1 class="card__title">Luxury</h1>
+      <p class="card__description">Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+  rental and arrive in style.</p>
+      <button class="more__btn">Learn More</button>
+    </article>
+  </main>
+  
+  
+  
+
+  
+  
+
+  
+  
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+</body>
+</html>
