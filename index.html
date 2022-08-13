@@ -50,31 +50,24 @@
 
     .card {
       display: flex;
+      margin: 0 20px;
       max-width: 1080px;
       overflow: hidden;
       border-radius: 8px;
     }
 
-    .card__sedans {
-      background-color: var(--bright-orange);  
+    .card__inside {
       display: flex;    
       flex-direction: column;
+      max-width: 300px;
       padding: 3rem;
     }
 
-    .card__suvs {
-      background-color: var(--dark-cyan);
-      display: flex;    
-      flex-direction: column;
-      padding: 3rem;
-    }
+    .card__sedans {background-color: var(--bright-orange);}
 
-    .card__luxuries {
-      background-color: var(--very-dark-cyan);
-      display: flex;    
-      flex-direction: column;
-      padding: 3rem;
-    }
+    .card__suvs {background-color: var(--dark-cyan);}
+
+    .card__luxuries {background-color: var(--very-dark-cyan);}
 
     .card__title {
       text-transform: uppercase;
@@ -85,6 +78,37 @@
 
     .card__description {
       color: var(--transparent-white);
+      line-height: 1.5rem;
+      margin-bottom: 5rem;
+    }
+
+    .more__btn {
+      font-family: 'Lexend Deca', sans-serif;
+      font-weight: 700;
+      background-color: #fff;
+      border: 2px solid transparent;
+      align-self: flex-start;
+      padding: 15px 35px;
+      border-radius: 30px;
+      transition: all .3s ease;
+    }
+    
+    .card__sedans > .more__btn {
+      color: var(--bright-orange);
+    }
+    
+    .card__suvs > .more__btn {
+      color: var(--dark-cyan);
+    }
+    
+    .card__luxuries > .more__btn {
+      color: var(--very-dark-cyan);
+    }
+    
+    .more__btn:hover {
+      color: #fff;
+      background-color: transparent;
+      border: 2px solid #fff;
     }
 
     .attribution { 
@@ -94,25 +118,45 @@
       bottom: 0;
     }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+    @media screen and (max-width: 850px) {
+      body {
+        height: 210vh;
+        justify-content: space-between;
+      }
+      
+      .card {
+        margin-top: 30px;
+        flex-direction: column;
+      }
+
+      .card__description {
+      margin-bottom: 2rem;
+      }
+
+      .attribution { 
+      position: relative;
+    }
+    }
   </style>
 </head>
 <body>
   <main class="card">
-    <article class="card__sedans">
+    <article class="card__sedans card__inside">
       <img src="./images/icon-sedans.svg" alt="sedan"  width="64" height="40" class="car__image">
       <h1 class="card__title">Sedans</h1>
       <p class="card__description">Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
   or on your next road trip.</p>
       <button class="more__btn">Learn More</button>
     </article>
-    <article class="card__suvs">
+    <article class="card__suvs card__inside">
       <img src="./images/icon-suvs.svg" alt="suv" width="64" height="40" class="car__image">
       <h1 class="card__title">SUVs</h1>
       <p class="card__description">Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
   and off-road adventures.</p>
       <button class="more__btn">Learn More</button>
     </article>
-    <article class="card__luxuries">
+    <article class="card__luxuries card__inside">
       <img src="./images/icon-luxury.svg" alt="luxury" width="64" height="40" class="car__image">
       <h1 class="card__title">Luxury</h1>
       <p class="card__description">Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
@@ -120,19 +164,9 @@
       <button class="more__btn">Learn More</button>
     </article>
   </main>
-  
-  
-  
-
-  
-  
-
-  
-  
-  
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://portfolio-daironcanel.netlify.app">Dairon Canel</a>.
   </footer>
 </body>
 </html>
