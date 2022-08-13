@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions](https://www.frontendmentor.io/solutions/responsive-3-column-preview-card-component-using-css-flexbox-7l0AdlMLeo)
+- Live Site URL: [https://frontendmentor-task7-daironcanel.netlify.app](https://frontendmentor-task7-daironcanel.netlify.app/)
 
 ## My process
 
